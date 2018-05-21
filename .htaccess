@@ -2,6 +2,6 @@ RewriteEngine On
 Options +FollowSymlinks
 
 <Files *.ini>
-Deny from all
+    Deny from all
 </Files>
 
