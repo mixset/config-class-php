@@ -1,11 +1,18 @@
 <?php
 
-namespace Core;
+namespace Config\Core;
 
-use Exceptions\LoggerException;
+use Config\Exceptions\LoggerException;
 
+/**
+ * Class Logger
+ * @package Config\Core
+*/
 class Logger
 {
+    /**
+     * @var
+    */
     protected $path;
 
     /**

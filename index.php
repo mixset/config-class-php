@@ -1,6 +1,6 @@
 <?php
 
-use Core\Config;
+use Config\Core\Config;
 
 ob_clean();
 
@@ -19,9 +19,8 @@ spl_autoload_register(function ($className) {
     }
 });
 
-
 try {
-    $logger = new \Core\Logger();
+    $logger = new \Config\Core\Logger();
     $logger->setPath('src/storage/logs/logger.log');
 
     $cfg = new Config('config.ini', $logger);

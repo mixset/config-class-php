@@ -1,9 +1,16 @@
 <?php
 
-namespace Core;
+namespace Config\Core;
 
+/**
+ * Class Engine
+ * @package Config\Core
+*/
 class Engine
 {
+    /**
+     * Engine constructor.
+    */
     public function __construct()
     {
         $this->security();

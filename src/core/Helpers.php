@@ -1,7 +1,11 @@
 <?php
 
-namespace Core;
+namespace Config\Core;
 
+/**
+ * Class Helpers
+ * @package Config\Core
+*/
 class Helpers
 {
     /**

@@ -1,9 +1,13 @@
 <?php
 
-namespace Core;
+namespace Config\Core;
 
-use Exceptions\ConfigException;
+use Config\Exceptions\ConfigException;
 
+/**
+ * Class Config
+ * @package Config\Core
+*/
 class Config
 {
     /**
@@ -30,7 +34,7 @@ class Config
     /**
      * @param $file
      * @param Logger $logger
-     */
+    */
     public function __construct($file, Logger $logger)
     {
         $this->file = $file;
@@ -89,13 +93,12 @@ class Config
     }
 
     /**
+     * @param array $search
      *
-     *
-     * @param array $what
      * @return array
      * @throws ConfigException
     */
-    public function getConfig($what = [])
+    public function getConfig($search = [])
     {
         if (!$config = parse_ini_file($this->file)) {
             throw new ConfigException('There was a problem with parsing a ini file');
@@ -103,7 +106,7 @@ class Config
 
         $data = [];
 
-        foreach ($what as $key) {
+        foreach ($search as $key) {
             $data[] = $config[$key];
         }
 
@@ -114,7 +117,7 @@ class Config
      * @param $key
      * @param $file
      * @return bool
-     */
+    */
     private function isKeyExist($key, $file)
     {
         return array_key_exists(
