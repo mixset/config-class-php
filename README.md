@@ -11,4 +11,11 @@ Thank you :)
 
 ## Changelog
 
-[]
+[10.12.2015] - v1.0
+* Initial release
+
+[06.04.2018] - v1.1
+* Changed directory structure
+* Custom exceptions
+* Namespaces and PSR fixes
+* Classes simplification
