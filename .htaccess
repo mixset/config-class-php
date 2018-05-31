@@ -4,4 +4,3 @@ Options +FollowSymlinks
 <Files *.ini>
     Deny from all
 </Files>
-

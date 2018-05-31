@@ -1,6 +1,6 @@
 <?php
 
-namespace Config\Exceptions;
+namespace Mixset\ConfigManager\Exceptions;
 
 use Exception;
 
