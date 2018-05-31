@@ -1,0 +1,15 @@
+{
+  "name": "mixset/security-class-php",
+  "authors": [
+    {
+      "name": "mixset",
+      "email": "dominikrynko@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "5.6.*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.7"
+  }
+}
