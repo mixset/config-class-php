@@ -1,8 +1,9 @@
 {
   "name": "mixset/security-class-php",
+  "keywords": ["configuration", "php", "ini"],
   "authors": [
     {
-      "name": "mixset",
+      "name": "Dominik Ryńko",
       "email": "dominikrynko@gmail.com"
     }
   ],
@@ -11,5 +12,15 @@
   },
   "require-dev": {
     "phpunit/phpunit": "^5.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mixset\\ConfigManager\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
   }
 }
