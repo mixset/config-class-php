@@ -1,6 +1,5 @@
 <?php
 
-
 use Mixset\ConfigManager\Config;
 use Mixset\ConfigManager\Exceptions\ConfigException;
 
