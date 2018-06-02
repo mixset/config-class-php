@@ -152,11 +152,11 @@ class Config
         $path = $this->getPath();
         $config = $this->parseIniFile($path, true);
 
-        if ($this->isArrayExist($arrayName, $path)) {
-            return $config[$arrayName];
-        } else {
+        if ($this->isArrayExist($arrayName, $path) === false) {
             throw new ConfigException('Called array or key: '. $arrayName . ' does not exist.');
         }
+
+        return $config[$arrayName];
     }
 
     /**
