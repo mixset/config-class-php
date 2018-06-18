@@ -1,6 +1,6 @@
 <?php
 
-namespace Mixset\ConfigManager\Core;
+namespace Mixset\ConfigManager\Tests;
 
 use Mixset\ConfigManager\Exceptions\ConfigException;
 
